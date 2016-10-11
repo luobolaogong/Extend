@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+This stuff has a counterpart in MSAT in msat-portlet/web/WEB-INF/jsp/LeafMap.jsp
+And also in msat-portlet/src/com/akimeka/web/server/map/LeafMapServlet.java
+-->
+<html>
+<head>
+    <script src='closure-library/closure/goog/base.js'></script>
+    <script src='closure-library/closure/goog/object/object.js'></script>
+
+    <link rel='stylesheet' href='Leaflet_0.7.7/leaflet.css' />
+    <script src='Leaflet_0.7.7/leaflet-src.js'></script>
+
+    <link rel="stylesheet" href="libs/Leaflet.draw-0.2.4/dist/leaflet.draw.css" />
+    <script src="libs/Leaflet.draw-0.2.4/dist/leaflet.draw-src.js"></script>
+
+    <script src='TestExtend.js'></script>
+
+    <style>html,body{margin:0;}#map{width:100vw;height:100vh;}</style>
+</head>
+<body onload='test()'>
+<div id='map'></div>
+<script>
+    function test() {
+        new TestExtend();
+    }
+</script>
+</body>
+</html>
